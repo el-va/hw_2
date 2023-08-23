@@ -84,9 +84,32 @@ body {
 }
 
 .game__img {
-    transition: all 0.1s;
-}
-.game__img:hover {
+    width: 379px;
+    height: 300px;
     border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.game__img_1 {
+    background-image: url(game1.png);
+}
+.game__img_2 {
+    background-image: url(game2.png);
+}
+.game__img_3 {
+    background-image: url(game3.png);
+}
+
+.game__img:hover {
     border: 3px solid #44D2FF;
+}
+
+.game__text {
+    position: absolute;
+    top: 236.36px;
+    left: 32px;
+    bottom: 32px;
 }
