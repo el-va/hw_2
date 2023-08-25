@@ -104,12 +104,11 @@ body {
 }
 
 .game__img:hover {
-    border: 3px solid #44D2FF;
+    outline: 3px solid #44D2FF;
 }
 
 .game__text {
     position: absolute;
-    top: 236.36px;
     left: 32px;
     bottom: 32px;
 }
