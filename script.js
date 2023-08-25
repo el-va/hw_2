@@ -68,7 +68,7 @@ const user = {
 
 // Задание 9.1
 
-user.cityOfResidence
+user["city of residence"] = 'City';
 
 // Задание 9.2
 
@@ -77,7 +77,7 @@ user.yearBirth
 
 // Задание 9.3
 
-delete user.cityOfResidence
+delete user["city of residence"]
 
 // Задание 9.4
 
