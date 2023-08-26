@@ -1,7 +1,7 @@
 // Задание 1
 
-// let a = 10;
-// alert(10);
+let a = 10;
+alert(a);
 
 let a = 20;
 alert(a);
@@ -72,8 +72,7 @@ user["city of residence"] = 'City';
 
 // Задание 9.2
 
-delete user.age
-user.yearBirth
+user.age = 25
 
 // Задание 9.3
 
@@ -81,8 +80,8 @@ delete user["city of residence"]
 
 // Задание 9.4
 
-let info = prompt("Какую информацию вы хотите узнать о пользователе?");
-alert(info);
+let info = prompt('Какую информацию вы хотите узнать о пользователе?');
+alert(user[info]);
 
 // Задание 10
 
