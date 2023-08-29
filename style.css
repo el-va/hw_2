@@ -112,3 +112,43 @@ body {
     left: 32px;
     bottom: 32px;
 }
+
+
+@media (max-width: 424px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .main {
+        text-align: center;
+    }
+    .main__name {
+        padding-top: 238.69px;
+        font-size: 32px;
+    }
+
+    .main__text {
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 32.95px;
+        padding-bottom: 32.95px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .main__button {
+        margin-bottom: 238.69px;
+    }
+
+    .game {
+        flex-wrap: wrap;
+        gap: 32.29px;
+    }
+
+    .game__img {
+        width: 343px;
+    }
+}
