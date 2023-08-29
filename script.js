@@ -3,8 +3,8 @@
 let a = 10;
 alert(a);
 
-let a = 20;
-alert(a);
+let aa = 20;
+alert(aa);
 
 // Задание 2
 
@@ -80,8 +80,8 @@ delete user["city of residence"]
 
 // Задание 9.4
 
-let info = prompt('Какую информацию вы хотите узнать о пользователе?');
-alert(user[info]);
+// let info = prompt('Какую информацию вы хотите узнать о пользователе?');
+// alert(user[info]);
 
 // Задание 10
 
