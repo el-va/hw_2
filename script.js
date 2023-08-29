@@ -82,8 +82,8 @@ delete user["city of residence"]
 
 // Задание 9.4
 
-let info = prompt('Какую информацию вы хотите узнать о пользователе?');
-alert(user[info]);
+// let info = prompt('Какую информацию вы хотите узнать о пользователе?');
+// alert(user[info]);
 
 // Задание 10
 
