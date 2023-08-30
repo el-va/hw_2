@@ -93,109 +93,116 @@
 
 
 
-// 2.3 Условное ветвление
+// // 2.3 Условное ветвление
 
-// Задание 1
+// // Задание 1
 
-let password = 'пароль';
-let askPassword = prompt('Введите пароль');
+// let password = 'пароль';
+// let askPassword = prompt('Введите пароль');
 
-password = password.toLocaleLowerCase
+// if (askPassword === password) {
+//     alert('Пароль введен верно');
+// } else {
+//     alert('Пароль введен неправильно');
+// }
 
-if (askPassword === 'пароль') {
-    alert('Пароль введен верно');
-} else {
-    alert('Пароль введен неправильно');
-}
+// // Задание 2
 
-// Задание 2
+// let a = 5;
 
-let a = 5;
+// (a >= 0 && a <= 10) ? console.log('Верно') : console.log('Неверно');
 
-(a >= 0 && a <= 10) ? console.log('Верно') : console.log('Неверно');
+// // Задание 3
 
-// Задание 3
+// let d = 55;
+// let e = 105;
 
-let d = 55;
-let e = 105;
+// (d >= 100 || e >= 100) ? console.log('Верно') : console.log('Неверно');
 
-(d >= 100 || e >= 100) ? console.log('Верно') : console.log('Неверно');
+// // Задание 4
 
-// Задание 4
+// let b = '2';
+// let c = '3';
 
-let b = '2';
-let c = '3';
+// alert(Number(b) + Number(c));
 
-alert(Number(b) + Number(c));
+// // Задание 5
 
-// Задание 5
+// let monthNumber = 12;
+// let month = Number(prompt('Введите номер месяца'));
 
-let monthNumber = 12;
-let month = Number(prompt('Введите номер месяца'));
+// if (isNaN(month)) {
+//     alert('Введено не числовое значение');
+// } else {
+//     switch (month) {
+//         case 12:
+//         case 1:
+//         case 2:
+//             alert('Зима');
+//             break;
+//         case 3:
+//         case 4:
+//         case 5:
+//             alert('Весна');
+//             break;
+//         case 6:
+//         case 7:
+//         case 8:
+//             alert('Лето');
+//             break;
+//         case 9:
+//         case 10:
+//         case 11:
+//             alert('Осень');
+//             break;
+//         default: alert('Номер месяца больше 12');
+//             break;
+//     }
+// }
 
-switch (month) {
-    case 12:
-    case 1:
-    case 2:
-        alert('Зима');
-        break;
-    case 3:
-    case 4:
-    case 5:
-        alert('Весна');
-        break;
-    case 6:
-    case 7:
-    case 8:
-        alert('Лето');
-        break;
-    case 9:
-    case 10:
-    case 11:
-        alert('Осень');
-        break;
-    default: alert('Номер месяца больше 12');
-        break;
-}
+// // Задание 6
+// // Добавлен адаптив по макету к разрешению 375px
 
-// Задание 6
-// Добавлен адаптив по макету к разрешению 375px
+// // Доп.задание 7
 
-// Доп.задание 7
+// let num = Number(prompt('Пожалуйста, введите любое число'));
 
-let num = prompt('Пожалуйста, введите любое число');
+// if (isNaN(num)) {
+//     alert('Введено не числовое значение')
+// } else {
+//     if (num % 2 === 0) {
+//         alert('четное');
+//     } else {
+//         alert('нечетное');
+//     }   
+// }
 
-console.log(isNaN(num)); // проверка на нечисло
+// // Доп.задание 8
 
-num % 2 === 0 ? alert('Число четное') : alert('Число нечетное'); // проверка на чет/нечет
+// let clientsOS = Number(prompt('Выберите Вашу операционную систему: 0 - iOS, 1 - Android'));
 
-// Доп.задание 8
+// if (clientsOS === 0) {
+//     confirm('Установите версию приложения для iOS по ссылке');
+// } else if (clientsOS === 1) {
+//     confirm('Установите версию приложения для Android по ссылке');
+// } else {
+//     prompt('Пожалуйста, введите корректное значение: 0 - iOS, 1 - Android')
+// }
 
-let clientsOS = Number(prompt('Выберите Вашу операционную систему: 0 - iOS, 1 - Android'));
+// // Доп.задание 9
 
-if (clientsOS === 0) {
-    alert('Установите версию приложения для iOS по ссылке');
-} else if (clientsOS === 1) {
-    alert('Установите версию приложения для Android по ссылке');
-} else {
-    alert('Пожалуйста, введите корректное значение: 0 - iOS, 1 - Android');
-    prompt('Выберите Вашу операционную систему: 0 - iOS, 1 - Android')
-}
+// let clientOS = Number(prompt('Выберите Вашу операционную систему: 0 - iOS, 1 - Android'));
 
-// Доп.задание 9
+// let clientDeviceYear = 2015;
 
-let clientOS = Number(prompt('Выберите Вашу операционную систему: 0 - iOS, 1 - Android'));
+// let clientDevice = Number(prompt('Введите год Вашего устройства'));
 
-let clientDeviceYear = 2015;
-
-let clientDevice = Number(prompt('Введите год Вашего устройства'));
-
-if (clientOS === 0 && clientDevice >= 2015) {
-    alert('Установите версию приложения для iOS по ссылке');
-} else if (clientOS === 0 && clientDevice <= 2014) {
-    alert('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS === 1 && clientDevice >= 2015) {
-    alert('Установите версию приложения для Android по ссылке');
-} else if (clientOS === 1 && clientDevice <= 2015) {
-    alert('Установите облегченную версию приложения для Android по ссылке');
-}
+// if (clientOS === 0 && clientDevice >= clientDeviceYear) {
+//     alert('Установите версию приложения для iOS по ссылке');
+// } else if (clientOS === 0 && clientDevice < clientDeviceYear) {
+//     alert('Установите облегченную версию приложения для iOS по ссылке');
+// } else if (clientOS === 1 && clientDevice >= clientDeviceYear) {
+//     alert('Установите версию приложения для Android по ссылке');
+// } else if (clientOS === 1 && clientDevice < clientDeviceYear) {
+//     alert('Установите облегченную версию приложения для Android по ссылке');
+// }
