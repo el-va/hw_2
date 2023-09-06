@@ -217,6 +217,12 @@
 //     console.log('Привет');
 //   } while(false);
 
+// или
+
+// for (let i = 0; i < 2; i++) {
+//     console.log('Привет!');
+// };
+
 // Задание 2
 
 // let a = 1;
@@ -272,4 +278,136 @@
 //     if (dayNumber % 7 == 0) {
 //         console.log('Сегодня пятница, ' + dayNumber + '-е число. Необходимо подготовить отчет.');
 // }
+// }
+
+
+// 2.5 Функции
+
+// Задание 1
+
+// function minNum(a, b) {
+//     return a < b ? a : b;
+//   }
+
+// console.log(minNum(8, 4));
+// console.log(minNum(6, 6));
+
+// Задание 2
+
+// function evenAndOdd(a) {
+//     return a  % 2 === 0 ? 'Число четное' : 'Число нечетное';
+// }
+
+// console.log(evenAndOdd(5));
+
+// Задание 3
+
+// 3.1
+
+// let square = (a) => a * 2;
+// console.log(square(2));
+
+// 3.2
+
+// function number(num) {
+//     return num * 2;
+// }
+// console.log(number(2));
+
+// Задание 4
+
+// function userAge() {
+//     let askUserAge = Number(prompt('Сколько вам лет?'));
+//     if (isNaN(askUserAge)) {
+//         alert('Вы ввели неправильное значение');
+//     } else {
+//         if (askUserAge <= 12) {
+//             alert('Привет, друг!');
+//         } else {
+//             alert('Добро пожаловать!');
+//         }
+//     }
+// }
+
+// userAge();
+
+// Задание 5
+
+// let correctNumber = () => {
+//     let a = prompt('Введите первое число');
+//     let b = prompt('Введите второе число');
+//     let result;
+//     if (!isNaN(a) && !isNaN(b)) {
+//         result = a * b;
+//     } else {
+//         result = 'Одно или оба значения не являются числом';
+//     } 
+//     return result;
+// }
+// console.log(correctNumber());
+
+// Задание 6
+
+// let askU = Number(prompt('Введите число'));
+// let result;
+// let cubeNum = () => {
+// if (!isNaN(askU) && askU != '' && askU != null) {
+//     let cube = askU * 3;
+//     result = `${askU} в кубе равняется ${cube}`
+// } else {
+//     result = `Переданный параметр не является числом`;
+// }
+// return result;
+// }
+// console.log(cubeNum());
+
+// Задание 7
+
+// function getArea() {
+//     return Math.PI * this.radius * this.radius;
+// }
+
+// function getPerimeter() {
+//     return 2 * Math.PI * this.radius;
+// }
+
+// const circle1 = {
+//     radius: 4,
+//     getArea: getArea,
+//     getPerimeter: getPerimeter,
+// }
+
+// const circle2 = {
+//     radius: 7,
+//     getArea: getArea,
+//     getPerimeter: getPerimeter,
+// }
+
+// console.log(circle1.getArea());
+// console.log(circle1.getPerimeter());
+// console.log(circle2.getArea());
+// console.log(circle2.getPerimeter());
+
+// Задание 8 
+
+// let monthNum = prompt('Введите число от 1 до 12');
+// let month = parseInt(monthNum, 12);
+// if (month) {
+//     if (month === 12 || month === 1 || month === 2) {
+//         alert('Зима');
+//     }
+//     else if (month === 3 || month === 4 || month === 5) {
+//         alert('Весна');
+//     }
+//     else if (month === 6 || month === 7 || month === 8) {
+//         alert('Лето');
+//     }
+//     else if (month === 9 || month === 10 || month === 11) {
+//         alert('Осень');
+//     }
+//     else {
+//         alert('Введите число от 0 до 12');
+//     }
+// } else {
+//     alert('Введите число от 0 до 12');
 // }
