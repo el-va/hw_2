@@ -174,7 +174,7 @@
 //         alert('четное');
 //     } else {
 //         alert('нечетное');
-//     }   
+//     }
 // }
 
 // // Доп.задание 8
@@ -318,7 +318,7 @@
 
 // function userAge() {
 //     let askUserAge = Number(prompt('Сколько вам лет?'));
-//     if (isNaN(askUserAge)) {
+//     if (isNaN(askUserAge) || askUserAge <= 0) {
 //         alert('Вы ввели неправильное значение');
 //     } else {
 //         if (askUserAge <= 12) {
@@ -341,7 +341,7 @@
 //         result = a * b;
 //     } else {
 //         result = 'Одно или оба значения не являются числом';
-//     } 
+//     }
 //     return result;
 // }
 // console.log(correctNumber());
@@ -388,7 +388,7 @@
 // console.log(circle2.getArea());
 // console.log(circle2.getPerimeter());
 
-// Задание 8 
+// Задание 8
 
 // let monthNum = prompt('Введите число от 1 до 12');
 // let month = parseInt(monthNum, 12);
@@ -411,3 +411,34 @@
 // } else {
 //     alert('Введите число от 0 до 12');
 // }
+
+// или
+
+// let monthNum = prompt('Введите число от 1 до 12');
+// let month = parseInt(monthNum, 12);
+// if (month) {
+//     if (month === 12 || month === 1 || month === 2) {
+//         alert('Зима');
+//     }
+//     else if (month >= 3 && month <= 5) {
+//         alert('Весна');
+//     }
+//     else if (month >= 6 && month <= 8) {
+//         alert('Лето');
+//     }
+//     else if (month >= 9 && month <= 11) {
+//         alert('Осень');
+//     }
+//     else {
+//         alert('Введите число от 0 до 12');
+//     }
+// } else {
+//     alert('Введите число от 0 до 12');
+// }
+
+
+// Связываем сайт с первой игрой
+
+function letsPlayButton() {
+    confirm('Запускаю игру!')
+}
