@@ -206,3 +206,70 @@
 // } else if (clientOS === 1 && clientDevice < clientDeviceYear) {
 //     alert('Установите облегченную версию приложения для Android по ссылке');
 // }
+
+
+// 2.4 Циклы
+
+// Задание 1
+
+// do {
+//     console.log('Привет');
+//     console.log('Привет');
+//   } while(false);
+
+// Задание 2
+
+// let a = 1;
+// do {
+//     console.log(a);
+//     a++;
+// } while (a < 6);
+
+// или
+
+// for (let a = 1; a < 6; a++) {
+//     console.log (a);
+// }
+
+// Задание 3
+
+// let b = 7;
+// do {
+//     console.log(b);
+//     b++;
+// } while (b < 23);
+
+// или
+
+// for (let b = 7; b < 23; b++) {
+//     console.log (b);
+// }
+
+// Задание 4
+
+// let obj = {
+//     'Коля' : '200',
+//     'Вася' : '300',
+//     'Петя' : '400',
+// }
+
+// for (let name in obj) {
+//     console.log(name + ' - зарплата ' + obj[name] + ' долларов');
+// }
+
+// Задание 5
+
+// let n = 1000, num = 0;
+// while (n >= 50) {
+//     n = n / 2;
+//     num++;
+// }
+// console.log('Итераций: ' + num + ', результат деления = ' + n);
+
+//  Задание 6
+
+// for (let dayNumber = 1; dayNumber <= 31; dayNumber++) {
+//     if (dayNumber % 7 == 0) {
+//         console.log('Сегодня пятница, ' + dayNumber + '-е число. Необходимо подготовить отчет.');
+// }
+// }
