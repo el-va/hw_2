@@ -519,11 +519,15 @@ function letsPlayButton() {
 
 // let num = [9, 8, 7, 6, 5];
 
-// let askNum = prompt('Угадай число');
-// if (askNum = num.includes()) {
-//   console.log('Угадал')
+// let askNum = Number(prompt('Угадай число'));
+// if (isNaN(askNum) || askNum == '' || askNum == null) {
+//   console.log('Не число');
 // } else {
-//   console.log('Не угадал')
+//   if (askNum = num.includes(askNum)) {
+//   console.log('Угадал');
+// } else {
+//   console.log('Не угадал');
+// }
 // }
 
 // Задание 8
