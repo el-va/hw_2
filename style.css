@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-bottom: 493.29px;
 }
 
 .main__name {
@@ -55,7 +56,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 493.29px;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -113,8 +113,46 @@ body {
     bottom: 32px;
 }
 
-@media (max-width: 1439px) {
+.game__start {
+    background-color: #000915;
+    display: flex;
+    padding-top: 282px;
+    justify-content: space-between;
+    padding-bottom: 233.5px;
+}
 
+.game__start_name {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.game__start_box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 584px;
+}
+
+.game__start_text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.game__start_img_mob {
+    display: none;
+}
+
+@media (max-width: 1439px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     .main {
         text-align: center;
@@ -130,13 +168,17 @@ body {
     }
 
     .game__text {
-        font-size: 18px;
         left: 20px;
         bottom: 20px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     .game {
         justify-content: center;
@@ -145,6 +187,22 @@ body {
     .game__img {
         width: 225px;
         height: 150px;
+    }
+
+    .game__start_img {
+        display: none;
+    }
+
+    .game__start_name {
+        font-size: 32px;
+    }
+
+    .game__start_text {
+        font-size: 16px;
+    }
+
+    .game__start_img_mob {
+        display: block;
     }
 }
 
@@ -156,6 +214,7 @@ body {
 
     .main {
         text-align: center;
+        padding-bottom: 238.69px;
     }
     .main__name {
         padding-top: 238.69px;
@@ -173,16 +232,45 @@ body {
         display: none;
     }
 
-    .main__button {
-        margin-bottom: 238.69px;
-    }
-
     .game {
         flex-wrap: wrap;
         gap: 32.29px;
+        padding-top: 128px;
+        padding-bottom: 127.87px;
     }
 
     .game__img {
         width: 343px;
+    }
+
+    .game__start {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 51px;
+    }
+
+    .game__start_box {
+        width: 343px;
+        align-items: center;
+    }
+    
+    .game__start_name {
+        font-size: 32px;
+    }
+
+    .game__start_text {
+        font-size: 14px;
+    }
+
+    .game__start_img {
+        display: none;
+    }
+
+    .game__start_img_mob {
+        display: block;
+        padding-top: 64px;
     }
 }
