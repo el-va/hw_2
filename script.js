@@ -521,12 +521,12 @@ function letsPlayButton() {
 
 // let askNum = Number(prompt('Угадай число'));
 // if (isNaN(askNum) || askNum == '' || askNum == null) {
-//   console.log('Не число');
+//   alert('Не число');
 // } else {
 //   if (askNum = num.includes(askNum)) {
-//   console.log('Угадал');
+//   alertalert('Угадал');
 // } else {
-//   console.log('Не угадал');
+//   alert('Не угадал');
 // }
 // }
 
@@ -554,7 +554,7 @@ function letsPlayButton() {
 // 	console.log(arr[i]);
 // }
 
-// const result = arr.reduce((intermediate, value) => intermediate + value);
+// const result = arr.reduce((a, b) => a + b);
 
 // console.log(result);
 
