@@ -442,3 +442,150 @@
 function letsPlayButton() {
     confirm('Запускаю игру!')
 }
+
+
+// 2.6 Массивы
+
+// Задание 1
+
+// const num = [1, 5, 4, 10, 0, 3];
+
+// for (let a = 0; a < num.length; a++) {
+//   if (num[a] === 10) break;
+//   console.log(num[a]);
+// }
+
+// или, если нужно чтобы 10 тоже вывелась в консоль:
+
+// const num = [1, 5, 4, 10, 0, 3];
+
+// for (let a = 0; a < num.length; a++) {
+//   if (num[a] === 0) break;
+//   console.log(num[a]);
+// }
+
+// или
+
+// const num = [1, 5, 4, 10, 0, 3];
+
+// for (let number of num) {
+//   console.log(number);
+//     if (number === 10) {
+//     break;
+//   }
+// }
+
+// Задание 2
+
+// const num = [1, 5, 4, 10, 0, 3];
+
+// num.forEach((el, index) => {
+//   if (el === 4) {
+//   console.log(`Индекс числа ${el}: ${index}`)
+//   }
+// });
+
+// Задание 3
+
+// let num = [1, 3, 5, 10, 20];
+
+// num = num.join(' ');
+// console.log(num);
+
+// Задание 4
+
+// let arr = [];
+
+// for (let a = 0; a < 3; a++) {
+// 	arr[a] = [1, 1, 1];
+// }
+
+// console.log(arr);
+
+// // ---
+
+// let arr = [];
+
+// for (let a = 0; a < 3; a++) {
+//   arr[a] = [];
+//   for (let b = 0; b < 3; b++) {
+// 		arr[a].push(b + 1);
+// 	}
+// }
+// console.log(arr);
+
+// Задание 5
+
+// let num = [1, 1, 1];
+// num.push(2, 2, 2);
+// console.log(num);
+
+// Задание 6
+
+// let num = [9, 8, 7, 'a', 6, 5];
+// num.sort();
+// num.pop();
+// console.log(num);
+
+// Задание 7
+
+// let num = [9, 8, 7, 6, 5];
+
+// let askNum = Number(prompt('Угадай число'));
+// if (isNaN(askNum) || askNum == '' || askNum == null) {
+//   alert('Не число');
+// } else {
+//   if (askNum = num.includes(askNum)) {
+//   alert('Угадал');
+// } else {
+//   alert('Не угадал');
+// }
+// }
+
+// Задание 8
+
+// function reverseStr(str) {
+//     return str.split("").reverse().join("");
+// }
+
+// console.log(reverseStr('abcdef'));
+
+// Задание 9
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+
+// let result = [...arr1, ...arr2];
+// console.log(result);
+
+// Задание 10
+
+// let arr = [5, 1, 3, 7, 2];
+
+// for (let i = 0; i < arr.length - 1; i++) {
+//     let result = arr[i] + arr[i + 1];
+
+// 	console.log(result);
+// }
+
+// Задание 11
+
+// const nums = [2000, 500, 30];
+// let result = nums.map(item => (item * 2));
+// console.log(result);
+
+// Задание 12
+
+// const getLengthWords = result => result.map(str => str.length);
+
+// console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
+
+// Задание 13
+
+// const arr = [-1, 0, 5, -10, 56]; 
+// const result = arr.filter(item => item < 0); 
+// console.log(result);
+
+// const arr = [-25, 25, 0, -1000, -2]; 
+// const result = arr.filter(item => item < 0); 
+// console.log(result);
