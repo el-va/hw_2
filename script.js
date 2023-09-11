@@ -502,6 +502,18 @@ function letsPlayButton() {
 
 // console.log(arr);
 
+// // ---
+
+// let arr = [];
+
+// for (let a = 0; a < 3; a++) {
+//   arr[a] = [];
+//   for (let b = 0; b < 3; b++) {
+// 		arr[a].push(b + 1);
+// 	}
+// }
+// console.log(arr);
+
 // Задание 5
 
 // let num = [1, 1, 1];
@@ -524,7 +536,7 @@ function letsPlayButton() {
 //   alert('Не число');
 // } else {
 //   if (askNum = num.includes(askNum)) {
-//   alertalert('Угадал');
+//   alert('Угадал');
 // } else {
 //   alert('Не угадал');
 // }
@@ -550,13 +562,11 @@ function letsPlayButton() {
 
 // let arr = [5, 1, 3, 7, 2];
 
-// for (let i = 0; i < arr.length; i++) {
-// 	console.log(arr[i]);
+// for (let i = 0; i < arr.length - 1; i++) {
+//     let result = arr[i] + arr[i + 1];
+
+// 	console.log(result);
 // }
-
-// const result = arr.reduce((a, b) => a + b);
-
-// console.log(result);
 
 // Задание 11
 
