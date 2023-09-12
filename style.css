@@ -189,6 +189,11 @@ body {
         height: 150px;
     }
 
+    .game__start {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
     .game__start_img {
         display: none;
     }
@@ -250,6 +255,7 @@ body {
         align-items: center;
         text-align: center;
         padding-top: 51px;
+        padding-bottom: 85.01px;
     }
 
     .game__start_box {
@@ -272,5 +278,9 @@ body {
     .game__start_img_mob {
         display: block;
         padding-top: 64px;
+    }
+
+    .game__start_second {
+        flex-direction: column-reverse;
     }
 }
