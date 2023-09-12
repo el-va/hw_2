@@ -728,13 +728,13 @@ function letsPlayButtonSecond() {
     if (!isNaN(userAsk) || userAsk == '' || userAsk == null) {
       console.log('Введено некорректное значение');
     } else {
-      if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() !== fruits[6].toLowerCase()) {
-        console.log('Вы были близки к победе!');
+      if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() !== fruits[6].toLowerCase() || userAsk.toLowerCase() !== fruits[0].toLowerCase() && userAskSecond.toLowerCase() === fruits[6].toLowerCase()) {
+        alert('Вы были близки к победе!');
       } else {
         if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() === fruits[6].toLowerCase()) {
-            console.log('Поздравляю, вы правильно запомнили!');
+            alert('Поздравляю, вы правильно запомнили!');
         } else {
-            console.log('Увы, не угадали. Потренируйтесь еще!');
+            alert('Увы, не угадали. Потренируйтесь еще!');
         }
       }
     }
