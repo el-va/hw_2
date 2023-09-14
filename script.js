@@ -606,6 +606,15 @@ item.forEach((item) => {
   }
 });
 
+// используя startsWith()
+
+const item1 = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+item.forEach((item1) => {
+  if (item1.toLowerCase().startsWith("ко"))  {
+    console.log(item1);
+  }
+});
+
 // 
 
 const item2 = ['яблоко', 'груша', 'гриб', 'огурец'];
@@ -618,6 +627,8 @@ item2.forEach((item2) => {
 
 // 
 
+const item3 = ['Дом', 'Банк', 'Больница', 'Театр'];
+const search3 = 'Кино';
 item3.forEach((item3) => {
   if (item3.toLowerCase().includes(search3.toLowerCase())) {
     console.log(item3);
@@ -649,7 +660,7 @@ console.log(randomInt);
 // Задание 6
 
 function getRandomArrNumbers(length = 7) {
-    length = Math.floor(7 / 2);
+    length = Math.floor(length / 2);
     return Array.from(Array(length), () => Math.floor(Math.random() * 7) + 1);
   };
   const randomNum = getRandomArrNumbers();
@@ -658,7 +669,7 @@ function getRandomArrNumbers(length = 7) {
 //   
 
   function getRandomArrNumbers2(length = 12) {
-    length = Math.floor(12 / 2);
+    length = Math.floor(length / 2);
     return Array.from(Array(length), () => Math.floor(Math.random() * 12) + 1);
   };
   const randomNum2 = getRandomArrNumbers2();
@@ -728,10 +739,10 @@ function letsPlayButtonSecond() {
     if (!isNaN(userAsk) || userAsk == '' || userAsk == null) {
       console.log('Введено некорректное значение');
     } else {
-      if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() !== fruits[6].toLowerCase() || userAsk.toLowerCase() !== fruits[0].toLowerCase() && userAskSecond.toLowerCase() === fruits[6].toLowerCase()) {
+      if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() !== fruits[fruits.length - 1].toLowerCase() || userAsk.toLowerCase() !== fruits[0].toLowerCase() && userAskSecond.toLowerCase() === fruits[fruits.length - 1].toLowerCase()) {
         alert('Вы были близки к победе!');
       } else {
-        if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() === fruits[6].toLowerCase()) {
+        if (userAsk.toLowerCase() === fruits[0].toLowerCase() && userAskSecond.toLowerCase() === fruits[fruits.length - 1].toLowerCase()) {
             alert('Поздравляю, вы правильно запомнили!');
         } else {
             alert('Увы, не угадали. Потренируйтесь еще!');
