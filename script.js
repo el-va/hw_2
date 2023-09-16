@@ -590,133 +590,134 @@ function letsPlayButton() {
 // const result = arr.filter(item => item < 0); 
 // console.log(result);
 
+
 // 2.7 Встроенные объекты
 
 // Задание 1
 
-console.log("js".toUpperCase());
+// console.log("js".toUpperCase());
 
 // Задание 2
 
-const item = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-const search = 'ко';
-item.forEach((item) => {
-  if (item.toLowerCase().includes(search.toLowerCase())) {
-    console.log(item);
-  }
-});
+// const item = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+// const search = 'ко';
+// item.forEach((item) => {
+//   if (item.toLowerCase().includes(search.toLowerCase())) {
+//     console.log(item);
+//   }
+// });
 
 // используя startsWith()
 
-const item1 = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-item.forEach((item1) => {
-  if (item1.toLowerCase().startsWith("ко"))  {
-    console.log(item1);
-  }
-});
+// const item1 = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+// item.forEach((item1) => {
+//   if (item1.toLowerCase().startsWith("ко"))  {
+//     console.log(item1);
+//   }
+// });
 
 // 
 
-const item2 = ['яблоко', 'груша', 'гриб', 'огурец'];
-const search2 = 'гру';
-item2.forEach((item2) => {
-  if (item2.toLowerCase().includes(search2.toLowerCase())) {
-    console.log(item2);
-  }
-});
+// const item2 = ['яблоко', 'груша', 'гриб', 'огурец'];
+// const search2 = 'гру';
+// item2.forEach((item2) => {
+//   if (item2.toLowerCase().includes(search2.toLowerCase())) {
+//     console.log(item2);
+//   }
+// });
 
 // 
 
-const item3 = ['Дом', 'Банк', 'Больница', 'Театр'];
-const search3 = 'Кино';
-item3.forEach((item3) => {
-  if (item3.toLowerCase().includes(search3.toLowerCase())) {
-    console.log(item3);
-  }
-});
+// const item3 = ['Дом', 'Банк', 'Больница', 'Театр'];
+// const search3 = 'Кино';
+// item3.forEach((item3) => {
+//   if (item3.toLowerCase().includes(search3.toLowerCase())) {
+//     console.log(item3);
+//   }
+// });
 
 // Задание 3
 
-console.log(x = Math.floor(32.58884));
-console.log(x = Math.round(32.58884));
-console.log(x = Math.ceil(32.58884));
+// console.log(x = Math.floor(32.58884));
+// console.log(x = Math.round(32.58884));
+// console.log(x = Math.ceil(32.58884));
 
 // Задание 4
 
-console.log(Math.min(52, 53, 49, 77, 21, 32));
-console.log(Math.max(52, 53, 49, 77, 21, 32));
+// console.log(Math.min(52, 53, 49, 77, 21, 32));
+// console.log(Math.max(52, 53, 49, 77, 21, 32));
 
 // Задание 5
 
-function getRandomA(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// function getRandomA(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-let randomInt = getRandomA(1, 10);
-console.log(randomInt);
+// let randomInt = getRandomA(1, 10);
+// console.log(randomInt);
 
 // Задание 6
 
-function getRandomArrNumbers(length = 7) {
-    length = Math.floor(length / 2);
-    return Array.from(Array(length), () => Math.floor(Math.random() * 7) + 1);
-  };
-  const randomNum = getRandomArrNumbers();
-  console.log(randomNum);
+// function getRandomArrNumbers(length = 7) {
+//     length = Math.floor(length / 2);
+//     return Array.from(Array(length), () => Math.floor(Math.random() * 7) + 1);
+//   };
+//   const randomNum = getRandomArrNumbers();
+//   console.log(randomNum);
 
 //   
 
-  function getRandomArrNumbers2(length = 12) {
-    length = Math.floor(length / 2);
-    return Array.from(Array(length), () => Math.floor(Math.random() * 12) + 1);
-  };
-  const randomNum2 = getRandomArrNumbers2();
-  console.log(randomNum2);
+  // function getRandomArrNumbers2(length = 12) {
+  //   length = Math.floor(length / 2);
+  //   return Array.from(Array(length), () => Math.floor(Math.random() * 12) + 1);
+  // };
+  // const randomNum2 = getRandomArrNumbers2();
+  // console.log(randomNum2);
 
 // Задание 7
 
-function getRandomB(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-  console.log(getRandomB(11, 55));
+// function getRandomB(min, max) {
+//     min = Math.ceil(min);
+//     max = Math.floor(max);
+//     return Math.floor(Math.random() * (max - min)) + min;
+//   }
+//   console.log(getRandomB(11, 55));
 
 //   Задание 8
 
-let currentDate1 = new Date();
-console.log(currentDate1);
+// let currentDate1 = new Date();
+// console.log(currentDate1);
 
-let myDate2 = new Date(1674220924819);
-console.log(myDate2);
+// let myDate2 = new Date(1674220924819);
+// console.log(myDate2);
 
-let myDate3 = new Date("9/11/2023");
-console.log(myDate3);
+// let myDate3 = new Date("9/11/2023");
+// console.log(myDate3);
 
 //  Задание 9
 
-const currentDate = new Date();
-currentDate.setDate(currentDate.getDate() + 73);
-console.log(currentDate);
+// const currentDate = new Date();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(currentDate);
 
 // Задание 10 
 
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+// const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+// "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-let myDate = new Date();
-myDate.setDate(12);
-myDate.setMonth(8);
-myDate.setYear(2023);
-myDate.setHours(10);
-myDate.setMinutes(25);
-myDate.setSeconds(33);
+// let myDate = new Date();
+// myDate.setDate(12);
+// myDate.setMonth(8);
+// myDate.setYear(2023);
+// myDate.setHours(10);
+// myDate.setMinutes(25);
+// myDate.setSeconds(33);
 
-console.log(`Дата: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} - ${days[myDate.getDay()]}`);
-console.log(`Время: ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`);
+// console.log(`Дата: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} - ${days[myDate.getDay()]}`);
+// console.log(`Время: ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`);
 
 //  или в одну строку
 
@@ -750,3 +751,91 @@ function letsPlayButtonSecond() {
       }
     }
 }
+
+
+// 2.8 Callback, setTimeout, setInterval
+
+// Задание 1
+
+let people = [
+  {name: 'Глеб', age: 29},
+  {name: 'Анна', age: 17},
+  {name: 'Олег', age: 7},
+  {name: 'Оксана', age: 47}
+];
+
+people.sort(function (a, b) {
+ if (a.age > b.age) {
+   return 1;
+ }
+ if (a.age < b.age) {
+   return -1;
+ }
+ return 0;
+});
+
+console.log(people);
+
+// Задание 2 // не нашла решения
+
+function isPositive() {
+  const num = [3, -4, 1, 9];
+  
+  const isPositive = num.filter((number) => number > 0);
+  console.log(isPositive);
+  }
+
+  function isMale() {
+    const people = [
+       {name: 'Глеб', gender: 'male'},
+       {name: 'Анна', gender: 'female'},
+       {name: 'Олег', gender: 'male'},
+       {name: 'Оксана', gender: 'female'}
+    ];
+    const isMale = people.sort((a, b) => a.name > b.name ? 1 : -1);
+    console.log(isMale);
+    }
+
+// Задание 3
+
+let currentDate = new Date();
+
+let timerId = setInterval(() => console.log(currentDate), 3000);
+
+setTimeout(() => {clearInterval(timerId); console.log('30 секунд прошло');}, 30000);
+
+// Задание 4
+
+// function delayForSecond(callback) {
+//   setTimeout(delayForSecond, 1000);
+//   callback();
+// }
+
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
+
+// 
+
+const delayForSecond = setTimeout(() => {
+  console.log('Привет, Глеб!')
+}, 1000);
+
+clearTimeout(delayForSecond);
+
+// Задание 5 // не получилось
+
+function delayForSecond(cb) {
+  setTimeout(() => {
+      console.log('Прошла одна секунда');
+      if(cb) { 	cb(); }
+
+  }, 1000)
+}
+
+function sayHi (name) {
+  console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(sayHi('Глеб'));
+clearTimeout(delayForSecond);
