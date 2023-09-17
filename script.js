@@ -757,14 +757,14 @@ function letsPlayButtonSecond() {
 
 // Задание 1
 
-let people = [
+let people1 = [
   {name: 'Глеб', age: 29},
   {name: 'Анна', age: 17},
   {name: 'Олег', age: 7},
   {name: 'Оксана', age: 47}
 ];
 
-people.sort(function (a, b) {
+people1.sort(function (a, b) {
  if (a.age > b.age) {
    return 1;
  }
@@ -774,27 +774,42 @@ people.sort(function (a, b) {
  return 0;
 });
 
-console.log(people);
+console.log(people1);
 
-// Задание 2 // не нашла решения
+// Задание 2
 
-function isPositive() {
-  const num = [3, -4, 1, 9];
-  
-  const isPositive = num.filter((number) => number > 0);
-  console.log(isPositive);
+function isPositive(num) {
+  if (num >= 0) {
+    return num;
   }
+}
 
-  function isMale() {
-    const people = [
-       {name: 'Глеб', gender: 'male'},
-       {name: 'Анна', gender: 'female'},
-       {name: 'Олег', gender: 'male'},
-       {name: 'Оксана', gender: 'female'}
-    ];
-    const isMale = people.sort((a, b) => a.name > b.name ? 1 : -1);
-    console.log(isMale);
+function isMale(sub) {
+  if (sub.gender === 'male') {
+    return sub;
+  }
+}
+
+function filter(arr, callback) {
+  const newArr = [];
+  for (let i of arr) {
+    if (callback(i) !== undefined) {
+      newArr.push(i)
     }
+  }
+  return newArr;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+const people = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 // Задание 3
 
@@ -806,24 +821,24 @@ setTimeout(() => {clearInterval(timerId); console.log('30 секунд прош�
 
 // Задание 4
 
-// function delayForSecond(callback) {
-//   setTimeout(delayForSecond, 1000);
-//   callback();
-// }
+function delayForSecond(callback) {
+  setTimeout(callback, 1000);
+  callback();
+}
 
-// delayForSecond(function () {
-//   console.log('Привет, Глеб!');
-// })
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
 
 // 
 
-const delayForSecond = setTimeout(() => {
-  console.log('Привет, Глеб!')
-}, 1000);
+// const delayForSecond = setTimeout(() => {
+//   console.log('Привет, Глеб!')
+// }, 1000);
 
-clearTimeout(delayForSecond);
+// clearTimeout(delayForSecond);
 
-// Задание 5 // не получилось
+// Задание 5
 
 function delayForSecond(cb) {
   setTimeout(() => {
@@ -837,5 +852,10 @@ function sayHi (name) {
   console.log(`Привет, ${name}!`);
 }
 
-delayForSecond(sayHi('Глеб'));
-clearTimeout(delayForSecond);
+function sayHi (name) {
+  setTimeout(() => {
+    console.log(`Привет, ${name}!`);   
+  }, 1000)
+}
+  
+delayForSecond(() => sayHi('Глеб'));
