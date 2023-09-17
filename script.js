@@ -780,20 +780,24 @@ console.log(people1);
 
 function isPositive(num) {
   if (num >= 0) {
-    return num;
+    return true;
+  } else {
+    return false;
   }
 }
 
 function isMale(sub) {
   if (sub.gender === 'male') {
-    return sub;
+    return true;
+  } else {
+    return false;
   }
 }
 
 function filter(arr, callback) {
   const newArr = [];
   for (let i of arr) {
-    if (callback(i) !== undefined) {
+    if (callback(i) === true) {
       newArr.push(i)
     }
   }
@@ -823,7 +827,6 @@ setTimeout(() => {clearInterval(timerId); console.log('30 секунд прош�
 
 function delayForSecond(callback) {
   setTimeout(callback, 1000);
-  callback();
 }
 
 delayForSecond(function () {
