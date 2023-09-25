@@ -757,81 +757,81 @@ function letsPlayButtonSecond() {
 
 // Задание 1
 
-let people1 = [
-  {name: 'Глеб', age: 29},
-  {name: 'Анна', age: 17},
-  {name: 'Олег', age: 7},
-  {name: 'Оксана', age: 47}
-];
+// let people1 = [
+//   {name: 'Глеб', age: 29},
+//   {name: 'Анна', age: 17},
+//   {name: 'Олег', age: 7},
+//   {name: 'Оксана', age: 47}
+// ];
 
-people1.sort(function (a, b) {
- if (a.age > b.age) {
-   return 1;
- }
- if (a.age < b.age) {
-   return -1;
- }
- return 0;
-});
+// people1.sort(function (a, b) {
+//  if (a.age > b.age) {
+//    return 1;
+//  }
+//  if (a.age < b.age) {
+//    return -1;
+//  }
+//  return 0;
+// });
 
-console.log(people1);
+// console.log(people1);
 
 // Задание 2
 
-function isPositive(num) {
-  if (num >= 0) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isPositive(num) {
+//   if (num >= 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-function isMale(sub) {
-  if (sub.gender === 'male') {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isMale(sub) {
+//   if (sub.gender === 'male') {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-function filter(arr, callback) {
-  const newArr = [];
-  for (let i of arr) {
-    if (callback(i) === true) {
-      newArr.push(i)
-    }
-  }
-  return newArr;
-}
+// function filter(arr, callback) {
+//   const newArr = [];
+//   for (let i of arr) {
+//     if (callback(i) === true) {
+//       newArr.push(i)
+//     }
+//   }
+//   return newArr;
+// }
 
-console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+// console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
-const people = [
-   {name: 'Глеб', gender: 'male'},
-   {name: 'Анна', gender: 'female'},
-   {name: 'Олег', gender: 'male'},
-   {name: 'Оксана', gender: 'female'}
-];
+// const people = [
+//    {name: 'Глеб', gender: 'male'},
+//    {name: 'Анна', gender: 'female'},
+//    {name: 'Олег', gender: 'male'},
+//    {name: 'Оксана', gender: 'female'}
+// ];
 
-console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+// console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
 // Задание 3
 
-let currentDate = new Date();
+// let currentDate = new Date();
 
-let timerId = setInterval(() => console.log(currentDate), 3000);
+// let timerId = setInterval(() => console.log(currentDate), 3000);
 
-setTimeout(() => {clearInterval(timerId); console.log('30 секунд прошло');}, 30000);
+// setTimeout(() => {clearInterval(timerId); console.log('30 секунд прошло');}, 30000);
 
 // Задание 4
 
-function delayForSecond(callback) {
-  setTimeout(callback, 1000);
-}
+// function delayForSecond(callback) {
+//   setTimeout(callback, 1000);
+// }
 
-delayForSecond(function () {
-  console.log('Привет, Глеб!');
-})
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
 
 // 
 
@@ -843,22 +843,22 @@ delayForSecond(function () {
 
 // Задание 5
 
-function delayForSecond(cb) {
-  setTimeout(() => {
-      console.log('Прошла одна секунда');
-      if(cb) { 	cb(); }
+// function delayForSecond(cb) {
+//   setTimeout(() => {
+//       console.log('Прошла одна секунда');
+//       if(cb) { 	cb(); }
 
-  }, 1000)
-}
+//   }, 1000)
+// }
 
-function sayHi (name) {
-  console.log(`Привет, ${name}!`);
-}
+// function sayHi (name) {
+//   console.log(`Привет, ${name}!`);
+// }
 
-function sayHi (name) {
-  setTimeout(() => {
-    console.log(`Привет, ${name}!`);   
-  }, 1000)
-}
+// function sayHi (name) {
+//   setTimeout(() => {
+//     console.log(`Привет, ${name}!`);   
+//   }, 1000)
+// }
   
-delayForSecond(() => sayHi('Глеб'));
+// delayForSecond(() => sayHi('Глеб'));
